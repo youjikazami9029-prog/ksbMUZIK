@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a {
+    transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*скролл*/
+::-webkit-scrollbar {
+    width: 10px;           
+    height: 10px;          
+}
+
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+/*шрифты*/
+@font-face {
+    font-family: "aboutgroup";
+    src: url("ofont.ru_Greengoth.ttf") format("truetype");    
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "forname";
+  src: url("HeavytalPersonalUse-j9ngy.ttf") format("truetype");    
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "fornadname";
+  src: url("PickysideRegular-vn7w4.otf") format("opentype");    
+  font-display: swap;
+}
+
+/*шапка*/
+header {
+    background-color: #000000;
+    width: 100%;
+    z-index: 1000;
+}
+
+#name,
+#nadname,
+#ticketsname,
+#SMG {
+    color: #ffffff;
+}
+
+#SMG {
+    text-decoration: none;
+    font-family: "fornadname", sans-serif;
+    font-size: 50px;
+}
+
+#SMG:hover {
+    transform: scale(1.1);
+}
+
+#SMG:active {
+    transform: scale(0.9);
+}
+
+#name {
+    font-family: "forname", sans-serif;
+    font-size: 50px;
+}
+
+#nadname {
+    position: relative;
+    left: 35px;
+    top: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 100px;
+}
+
+#nadname {
+    font-family: "fornadname", sans-serif;
+    font-size: 20px;
+    word-spacing: 50px;
+}
+
+#ticketsname {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "fornadname", sans-serif;
+}
+
+#ticketsname:hover {
+   transform: scale(1.1);
+}
+
+#ticketsname:active {
+    transform: scale(0.9);
+}
+
+#groupabout {
+    text-decoration: none;
+    font-family: "fornadname", sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+#groupabout:hover {
+    transform: scale(1.1);
+}
+
+#groupabout:active {
+    transform: scale(0.9);
+}
+
+/* 1 стр после шапки */
+.strnumb1 {
+    height: 700px;
+    background-image: url("orig.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.strnumb1 img {
+    height: 50px;
+    width: 50px;
+}
+
+.strnumb1 a {
+    color: #000000;
+    font-family: "aboutgroup", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.strnumb1 a:hover {
+    transform: scale(1.1);
+}
+
+.strnumb1 a:active {
+    transform: scale(0.9);
+}
+
+.strnumb2,
+.strnumb3,
+.strnumb4,
+.strnumb5 {
+    position: absolute;
+}
+
+.strnumb2 {
+    top: 44%;
+    left: 8%;
+}
+
+.strnumb3 {
+    top: 30%;
+    left: 28%
+}
+
+.strnumb4 {
+    top: 45%;
+    left: 48%;
+}
+
+.strnumb5 {
+    top: 25%;
+    left: 67%;
+}
+/*о группе*/
+.aboutgroup {
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.about_text {
+    font-family: "aboutgroup", sans-serif;
+    font-size: 25px;
+}
+
+.about_text h3 {
+    margin: 24px 0 8px;
+    font-weight: normal;
+}
+
+.about_text li + li {
+    margin-top: 12px;
+}
+
+.about_text ul {
+    padding-left: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+#agname {
+    display: inline-block;
+    margin-bottom: 24px;
+    text-decoration: none;
+    font-family: "fornadname", sans-serif;
+    font-size: 80px;
+    color: white;
+    font-weight: normal;
+}
+
+#agname:hover {
+    transform: scale(1.1);
+}
+
+#agname:active {
+    transform: scale(0.9);
+}
+
+/* билеты*/
+
+.ticketsprice a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-size: 90px;
+    font-family: "fornadname", sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+
+.ticketsprice a:hover {
+    transform: scale(1.1);
+}
+
+.ticketsprice a:active {
+    transform: scale(0.9);
+}
+
+.ticketsprice {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 700px;
+    background-image: url("images\ \(2\).jpg");
+    background-size: cover;
+}
+
+.zone {
+    flex: 1;                   
+    display: flex;
+    flex-direction: column;    
+    align-items: center;       
+    text-align: center;
+}
+
+.Vipzonename,
+.Usualzonename {
+    font-family: "fornadname", sans-serif;
+    font-size: 200px;
+}
+
+.text1,
+.text2 {
+    font-family: "aboutgroup", sans-serif;
+    font-size: 30px;
+}
+
+/* footer */
+
+footer,
+#footerSC  {
+    background-color: #000000;
+}
+
+#footerSC {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+#footersmaci {
+    position: relative;
+    top: 20px;
+    left: 32%;
+    font-size: 90px;
+}
+
+footer a {
+    display: inline-block;
+    font-family: "fornadname", sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+footer a:active {
+    transform: scale(0.9);
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+footer div div div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
